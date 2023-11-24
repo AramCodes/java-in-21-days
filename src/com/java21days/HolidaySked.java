@@ -4,7 +4,7 @@ import java.util.*;
 public class HolidaySked {
     BitSet sked;
 
-    public HoldiaySked() {
+    public HolidaySked() {
         sked = new BitSet(365);
         int[] holiday = {1, 15, 50, 140, 185, 246, 281, 316, 326, 359};
         for (int i = 0 ; i < holiday.length; i++) {
@@ -22,7 +22,7 @@ public class HolidaySked {
     }
 
     public static void main(String[] arguments) {
-        HolidaySked call = new HolidaySked();
+        HolidaySked cal = new HolidaySked();
         if (arguments.length > 0) {
             try {
                 int whichDay = Integer.parseInt(arguments[0]);
